@@ -6,3 +6,6 @@ __pycache__/
 env.py
 *.xlsx
 *_lesson.ipynb
+*.csv
+sources_csv/
+sources_json/
