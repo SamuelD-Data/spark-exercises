@@ -25,8 +25,8 @@ def wrangle_311_data():
     # converting dates to date time format
     case = (
     case.withColumn("case_opened_date", to_timestamp("case_opened_date", fmt))
-    .withColumn("case_closed_date", to_timestamp("case_opened_date", fmt))
-    .withColumn("case_due_date", to_timestamp("case_opened_date", fmt))
+    .withColumn("case_closed_date", to_timestamp("case_closed_date", fmt))
+    .withColumn("case_due_date", to_timestamp("case_due_date", fmt))
     )
 
     # combining DFs
